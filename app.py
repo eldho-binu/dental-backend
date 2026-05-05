@@ -41,7 +41,7 @@ app.config['SESSION_COOKIE_DOMAIN'] = os.getenv('COOKIE_DOMAIN', None)
 CORS(
     app,
     origins=[
-        "https://ayurvedic-app.vercel.app",
+        "https://clinic-frontend.vercel.app",
         "http://localhost:3000", 
         "http://localhost:5173",
         "http://127.0.0.1:5173",
