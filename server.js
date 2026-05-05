@@ -21,6 +21,13 @@ client.on("ready", () => {
 });
 
 client.initialize();
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
+
+app.get("/api", (req, res) => {
+  res.json({ message: "API is working ✅" });
+});
 
 app.post("/send", async (req, res) => {
     try {
